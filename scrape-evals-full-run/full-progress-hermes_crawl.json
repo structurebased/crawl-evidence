@@ -1,0 +1,10 @@
+{
+  "engine": "hermes_crawl",
+  "total": 1000,
+  "done": 1000,
+  "summary": "2026-11-08T16:35:21.210506 phase=summary suite=quality engine=hermes_crawl run_id=fddfac68-4173-462c-9e36-d95a21ad8fee tasks=1000 analyzed=1000 success_rate=0.67 avg_f1=0.3864436023692585",
+  "exit_code": 0,
+  "started": "2026-11-08T15:31:39.978797+00:00",
+  "finished": "2026-11-08T16:37:49.020437+00:00",
+  "graders": 1000
+}

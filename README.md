@@ -17,6 +17,7 @@ Current numbers, run `eval_20261108_155615.jsonl`, 35 fixtures, scored offline:
 | Crawl yield | **113.1** unique useful pages per 1,000 requests | `eval/report.py` |
 | 100-URL slice, this engine | 70.0% coverage, 0.388 F1 | `compare.json` |
 | 100-URL slice, Firecrawl API | 75.0% coverage, 0.516 F1 | the same 100 URLs |
+| Full 1,000-URL corpus, this engine | **67.0% coverage, 0.386 F1** (4th of 14 by coverage, 12th by F1) | `scrape-evals-full-run/` |
 | Completeness match | 35/35 | `eval/report.py` |
 | Blocked rate | 8.6% (3/35) | `runner.applicable_summary` |
 | Markdown integrity | 167/167 headings, 48/48 tables, 0 tag leaks | `runner.markdown_summary` |
@@ -165,3 +166,10 @@ docs is `crawl_engine`.
 
 Apache License 2.0 is the proposal in `LICENSE`. The copyright holder makes
 the final call before this repository is published.
+
+## Note on the full-run artifacts
+
+The 1,000-URL run artifacts record the engine key `hermes_crawl`: that was
+the adapter's name when the run executed. The engine adapter has since been
+renamed to `crawl_engine`; the artifacts are kept verbatim because they are
+the record of what actually ran, not a renaming target.
