@@ -64,6 +64,10 @@ published. `leaderboard-verification.md` records why and what was thrown out.
 - Every scoreboard number re-derives from files in this tree. None of them
   needs a live crawl or network access.
 
+## Updating the receipts
+
+`python3 <engine>/scripts/sync_evidence.py RUN_DIR` publishes one run; RUN_DIR holds its results jsonl, its diag, and optionally `full_results.jsonl`. Results and classified copy go to `eval/results/`, diag to `scrape-evals-full-run/`, then `eval/report.py` re-runs here and must regenerate the same scorecard before the local commit. It never pushes.
+
 ## Anti-gaming rules
 
 The scorer refuses six moves that would inflate the score. All six are
