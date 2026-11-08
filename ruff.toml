@@ -1,0 +1,15 @@
+# /crawl ruff lint policy (CI gate).
+#
+# Deliberately curated: gate on correctness-critical rules; explicitly ACCEPT the
+# compact style that is idiomatic here. Rationale for ignored rules:
+#   E701 / E702 — one-line if/for and semicolon-joined statements are this codebase's
+#                 intentional compact style; not a correctness risk.
+#   E402        — module-import-not-at-top is REQUIRED for the `sys.path.insert(0, SKILL)`
+#                 bootstrap to work before later skill-package imports.
+#   E501        — line-length is purely cosmetic here; the code favors compact diagnostic
+#                 and data-structure lines (16 flagged), not a strict column budget.
+line-length = 120
+
+[lint]
+select = ["E", "F"]
+ignore = ["E701", "E702", "E402", "E501"]

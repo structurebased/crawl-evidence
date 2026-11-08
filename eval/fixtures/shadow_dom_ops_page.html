@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SENTINEL-OPS-TITLE Harborline Freight Network Status | Harborline Operations</title>
+<meta name="description" content="SENTINEL-OPS-META Live terminal status for the Harborline freight network: berth occupancy, dwell times and vessel windows for the Casablanca and Algeciras hubs.">
+<meta property="article:published_time" content="2026-10-14T06:30:00Z">
+<meta property="article:modified_time" content="2026-11-05T18:10:00Z">
+<meta name="author" content="Harborline network control">
+<meta name="keywords" content="freight, terminal status, berth occupancy, dwell time">
+<meta property="og:title" content="SENTINEL-OPS-TITLE Harborline Freight Network Status | Harborline Operations">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.harborline.example/img/network-map-1200.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.harborline.example/img/network-map-1200.png">
+<link rel="canonical" href="https://ops.harborline.example/status">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Harborline Freight Network Status","description":"SENTINEL-OPS-JSONLD berth occupancy and dwell time across the Harborline network","dateModified":"2026-11-05","publisher":{"@type":"Organization","name":"Harborline Freight"}}
+</script>
+<style>
+body{margin:0;font:15px/1.55 system-ui,sans-serif;color:#1a1d22;background:#fff}
+main{max-width:760px;margin:0 auto;padding:20px}
+h1{font-size:26px;margin:6px 0 10px}
+h2{font-size:18px;margin:22px 0 8px}
+img{max-width:100%;height:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin:12px 0}
+th,td{border:1px solid #d8dce2;padding:5px 8px;text-align:left}
+th{background:#f2f4f7}
+iframe{width:100%;height:180px;border:1px solid #d8dce2}
+</style>
+</head>
+<body>
+<main>
+<h1>Harborline network status</h1>
+<p>SENTINEL-OPS-TEXT berth windows and dwell readings refresh every fifteen
+minutes from the terminal plotters at Casablanca and Algeciras.</p>
+<a href="/handbook/berth-windows?ref=SENTINEL-OPS-CITATION" title="SENTINEL-OPS-LINKS-META berth window handbook">Berth window handbook</a>
+<a href="/ledger?q=SENTINEL-OPS-LINK">Open the maintenance ledger</a>
+<img src="https://cdn.harborline.example/img/network-map-640.png"
+     srcset="https://cdn.harborline.example/img/network-map-640.png 640w, https://cdn.harborline.example/img/SENTINEL-OPS-IMG-1600.png 1600w"
+     alt="SENTINEL-OPS-ALT route map of the Harborline network" width="760" height="320">
+<table>
+<caption>Morning dwell snapshot</caption>
+<tr><th>Terminal</th><th>Mean dwell</th></tr>
+<tr><td>Casablanca T2</td><td>SENTINEL-OPS-TABLE 14.2 h</td></tr>
+</table>
+<iframe src="https://maps.harborline.example/embed?hub=SENTINEL-OPS-IFRAME" title="Terminal map"></iframe>
+<h2>References</h2>
+<ol class="references">
+<li><a href="https://www.imo.org/en/ourwork/Pages/Cargo-securing.aspx?ref=SENTINEL-OPS-CITATION" title="IMO cargo securing guidance">IMO cargo securing code</a></li>
+</ol>
+<pre><code>curl -s https://ops.harborline.example/status?view=SENTINEL-OPS-MARKDOWN | jq .</code></pre>
+<div data-ref="SENTINEL-OPS-RAWHTML"></div>
+<div id="app"><p>Loading terminal feed…</p></div>
+<script>
+// Runtime-only text: the needle is assembled so a text extractor reading the
+// script bytes can never satisfy the sentinel by quoting source. The
+// innerHTML literal is fixture-constant markup, never user input.
+var tag = ['SENTINEL', 'OPS', 'SHADOW'].join('-') + '-WIDGET';
+var host = document.createElement('my-dwell-widget');
+document.getElementById('app').appendChild(host);
+var root = host.attachShadow({mode:'open'});
+root.innerHTML = '<section><h2>Live dwell widget</h2><p>' + tag +
+  ' berth C12 cleared at 05:42, mean dwell down two hours since Tuesday.</p></section>';
+</script>
+</main>
+</body>
+</html>

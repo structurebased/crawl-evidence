@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SENTINEL-DASH-TITLE Night operations dashboard | Port of Tanger Med Control</title>
+<meta name="description" content="SENTINEL-DASH-META Control-room dashboard that embeds a vessel-traffic frame, which itself embeds a berth map; includes quay utilisation and anchor-time tables.">
+<meta property="article:published_time" content="2026-11-05T21:00:00Z">
+<meta name="author" content="Tanger Med control room">
+<meta name="keywords" content="vessel traffic, berth utilisation, anchor time">
+<meta property="og:title" content="SENTINEL-DASH-TITLE Night operations dashboard | Port of Tanger Med Control">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.tangermed.example/img/dashboard-1200.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://control.tangermed.example/night-board">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"SENTINEL-DASH-TITLE night operations dashboard","applicationCategory":"BusinessApplication","keywords":["SENTINEL-DASH-JSONLD","vessel traffic","berth map","quay utilisation"]}
+</script>
+<style>
+body{margin:0;font:15px/1.55 system-ui,sans-serif;color:#16191e;background:#0f1216;color-scheme:dark}
+main{max-width:860px;margin:0 auto;padding:20px}
+h1{font-size:25px;margin:6px 0 10px}
+h2{font-size:18px;margin:24px 0 8px}
+img{max-width:100%;height:auto}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:14px 0}
+th,td{border:1px solid #2c333c;padding:6px 9px;text-align:left}
+th{background:#1a2027}
+iframe{width:100%;height:230px;border:1px solid #2c333c;background:#14181d}
+a{color:#7fc4ff}
+</style>
+</head>
+<body>
+<main>
+<h1>Night operations dashboard</h1>
+<p>SENTINEL-DASH-TEXT the night board shows every vessel inside the breakwater,
+the quay it is assigned to and the number of moves left on its work order.
+The vessel-traffic frame in the middle of the page carries a second frame for
+the berth map, so a reader has to follow two embeds to reach the quay view.</p>
+<p><a href="/night-board/history?ref=SENTINEL-DASH-CITATION" title="SENTINEL-DASH-LINKS-META previous night boards">Night board archive</a>
+<a href="/api/night-board?shift=SENTINEL-DASH-LINK">JSON for this shift</a></p>
+<figure><img src="/img/dashboard-480.png"
+  srcset="/img/dashboard-480.png 480w, /img/dashboard-960.webp 960w, /img/SENTINEL-DASH-IMG.webp 1920w"
+  alt="SENTINEL-DASH-ALT dark control-room wall showing berth assignments" width="860" height="250">
+<figcaption>Control-room wall at 23:40, shift B.</figcaption></figure>
+<table>
+<caption>Quay utilisation, 21:00 to 05:00</caption>
+<tr><th>Quay</th><th>Vessels</th><th>Moves left</th><th>Utilisation</th></tr>
+<tr><td>Q1</td><td>2</td><td>418</td><td>92%</td></tr>
+<tr><td>Q2</td><td>3</td><td>SENTINEL-DASH-TABLE 607</td><td>88%</td></tr>
+<tr><td>Q4</td><td>1</td><td>156</td><td>74%</td></tr>
+</table>
+
+<!-- Nested embeds: this frame's own document (iframe_rich_page.html) carries
+     two more frames, so the chain runs three levels deep from the reader. -->
+<iframe src="/iframe_rich_page.html#SENTINEL-DASH-IFRAME" title="vessel traffic and berth map" loading="lazy"></iframe>
+
+<iframe srcdoc="<iframe src='https://maps.tangermed.example/berths?shift=SENTINEL-DASH-SRCDOC' title='Berth map'></iframe>" title="Berth map fallback"></iframe>
+<h2>References</h2>
+<ol class="references">
+<li><a href="https://www.imo.org/en/OurWork/Safety/Pages/navigation.aspx?ref=SENTINEL-DASH-CITATION" title="IMO navigation guidance">IMO, Navigation, Communications and Search and Rescue</a></li>
+</ol>
+<pre><code class="language-bash"># SENTINEL-DASH-MARKDOWN list quays still working past midnight
+curl -s https://control.tangermed.example/api/quays?after=00:00 | jq '.[].id'</code></pre>
+<div data-ref="SENTINEL-DASH-RAWHTML"></div>
+</main>
+</body>
+</html>

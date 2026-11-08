@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Operations Report</title>
+  <meta name="description" content="Three operational tables with spanned cells.">
+</head>
+<body>
+  <article>
+    <h1>Quarterly Operations Report</h1>
+    <p>SENTINEL-TABLES-SPAN the quarter closed with revenue up in every
+    region and headcount flat. Three tables follow; the first two use
+    rowspan and colspan.</p>
+
+    <h2>Revenue by region</h2>
+    <table>
+      <thead>
+        <tr><th rowspan="2">Region</th><th colspan="2">Revenue</th></tr>
+        <tr><th>Q3</th><th>Q4</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>EMEA</td><td>1.2M</td><td>1.5M</td></tr>
+        <tr><td rowspan="2">APAC</td><td>0.8M</td><td>0.9M</td></tr>
+        <tr><td>0.7M</td><td>1.0M</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Warehouse inventory</h2>
+    <table>
+      <thead>
+        <tr><th>Site</th><th colspan="2">Units</th></tr>
+        <tr><th></th><th>In stock</th><th>In transit</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Rotterdam</td><td>4,120</td><td>600</td></tr>
+        <tr><td>Singapore</td><td>3,540</td><td>900</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Headcount by function</h2>
+    <table>
+      <thead><tr><th>Function</th><th>Hires</th><th>Attrition</th><th>Net</th></tr></thead>
+      <tbody>
+        <tr><td>Engineering</td><td>18</td><td>5</td><td>+13</td></tr>
+        <tr><td>Operations</td><td>7</td><td>2</td><td>+5</td></tr>
+        <tr><td>Sales</td><td>9</td><td>6</td><td>+3</td></tr>
+      </tbody>
+    </table>
+
+    <p>Read the <a href="/reports/archive">archived reports</a> for prior
+    quarters.</p>
+  </article>
+</body>
+</html>

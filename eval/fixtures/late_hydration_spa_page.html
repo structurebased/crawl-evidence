@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SENTINEL-HYD-TITLE Autumn catch bulletin | Tidewater Fisheries Observatory</title>
+<meta name="description" content="SENTINEL-HYD-META Server-rendered catch bulletin for the Tidewater groundfish fleet, hydrated on the client with live buoy readings after 1.4 seconds.">
+<meta property="article:published_time" content="2026-11-02T05:45:00Z">
+<meta property="article:modified_time" content="2026-11-06T19:10:00Z">
+<meta name="author" content="Tidewater Observatory desk">
+<meta name="keywords" content="groundfish, buoy, catch bulletin, sea temperature">
+<meta property="og:title" content="SENTINEL-HYD-TITLE Autumn catch bulletin | Tidewater Fisheries Observatory">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://cdn.tidewater.example/img/buoy-1200.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://obs.tidewater.example/bulletin/2026-11-06">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"SENTINEL-HYD-TITLE Autumn catch bulletin","keywords":["SENTINEL-HYD-JSONLD","groundfish","sea temperature","buoy network"],"datePublished":"2026-11-02","dateModified":"2026-11-06"}
+</script>
+<style>
+body{margin:0;font:15px/1.62 system-ui,sans-serif;color:#171a1f;background:#fff}
+main{max-width:760px;margin:0 auto;padding:20px}
+h1{font-size:28px;margin:6px 0 10px}
+h2{font-size:19px;margin:26px 0 8px}
+img{max-width:100%;height:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin:14px 0}
+th,td{border:1px solid #d7dce3;padding:6px 9px;text-align:left}
+th{background:#f2f5f8}
+iframe{width:100%;height:200px;border:1px solid #d7dce3}
+</style>
+</head>
+<body>
+<main>
+<div id="__next">
+<article>
+<h1>Autumn catch bulletin</h1>
+<p>SENTINEL-HYD-TEXT landings held steady through the first week of November,
+with the offshore fleet reporting cod and haddock in the usual grounds south
+of thebank while inshore pots stayed quiet in the fog.</p>
+<p><a href="/bulletin/archive?ref=SENTINEL-HYD-CITATION" title="SENTINEL-HYD-LINKS-META full bulletin archive">Full bulletin archive</a>
+<a href="/buoys?ref=SENTINEL-HYD-LINK">Buoy readings for this week</a></p>
+<figure><img src="/img/buoy-480.jpg"
+  srcset="/img/buoy-480.jpg 480w, /img/buoy-960.webp 960w, /img/SENTINEL-HYD-IMG.webp 1920w"
+  alt="SENTINEL-HYD-ALT research buoy rolling in a grey swell" width="760" height="280">
+<figcaption>Buoy 14, 40 nautical miles southeast of the port.</figcaption></figure>
+<table>
+<caption>Reported landings, week ending 6 November 2026, tonnes</caption>
+<tr><th>Species</th><th>Inshore</th><th>Offshore</th></tr>
+<tr><td>Atlantic cod</td><td>18.4</td><td>SENTINEL-HYD-TABLE 212.7</td></tr>
+<tr><td>Haddock</td><td>9.1</td><td>146.3</td></tr>
+<tr><td>Yellowtail flounder</td><td>4.8</td><td>61.2</td></tr>
+</table>
+<iframe src="https://buoys.tidewater.example/embed?bulletin=SENTINEL-HYD-IFRAME" title="Live buoy map"></iframe>
+<h2>References</h2>
+<ol class="references">
+<li><a href="https://www.fao.org/fishery/en/aquaculture?ref=SENTINEL-HYD-CITATION" title="FAO fisheries glossary">FAO, State of World Fisheries and Aquaculture</a></li>
+</ol>
+<pre><code class="language-bash"># SENTINEL-HYD-MARKDOWN fetch the latest buoy temperature series
+curl -s https://api.tidewater.example/v1/buoys/14/temperature | jq '.[-1]'</code></pre>
+<div data-ref="SENTINEL-HYD-RAWHTML"></div>
+</article>
+</div>
+<script>
+// The client timer appends a live panel the server never rendered. The needle
+// is assembled so a text extractor reading the script bytes can never satisfy
+// the sentinel by quoting source. The innerHTML literal is fixture-constant
+// markup, never user input.
+var parts = ['SENTINEL', 'HYD', 'SHADOW'].join('-') + '-LIVEPANEL';
+setTimeout(function () {
+  var box = document.createElement('aside');
+  box.className = 'live-panel';
+  box.innerHTML = '<h2>Live buoy panel</h2><p>' + parts +
+    ' sea temperature at buoy 14 is 14.8 C, up four tenths since dawn.</p>';
+  document.getElementById('__next').appendChild(box);
+  document.body.setAttribute('data-ready', '1');
+}, 1400);
+</script>
+</main>
+</body>
+</html>

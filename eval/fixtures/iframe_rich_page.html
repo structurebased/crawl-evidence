@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Embeds Explained</title>
+  <meta name="description" content="A page with a YouTube player, a content iframe, and a blocked wall iframe.">
+</head>
+<body>
+  <article>
+    <h1>Embeds Explained</h1>
+    <p>SENTINEL-IFRAME-PAGE three frames sit on this page: a YouTube player
+    that canonicalizes to a watch URL, a same-origin panel that stays a
+    plain absolute URL, and a reCAPTCHA frame that must never become a
+    link.</p>
+
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            width="560" height="315" title="SENTINEL-IFRAME-YT"
+            allowfullscreen></iframe>
+
+    <iframe data-src="/documentation_page.html"
+            width="640" height="400" title="SENTINEL-IFRAME-CONTENT"
+            loading="lazy"></iframe>
+
+    <iframe src="https://www.recaptcha.net/recaptcha/api2/anchor?k=site-key"
+            width="300" height="60" title="SENTINEL-IFRAME-WALL"
+            scrolling="no"></iframe>
+
+    <p>The long form version is in the <a href="/guides/embeds">embeds
+    guide</a>.</p>
+  </article>
+</body>
+</html>

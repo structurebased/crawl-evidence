@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Graph Catalog Product Page</title>
+  <meta name="description" content="A product page that declares @graph JSON-LD and schema.org microdata.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "SENTINEL-GRAPH-ARTICLE how the catalog stayed queryable",
+        "datePublished": "2026-05-17",
+        "author": {"@type": "Person", "name": "SENTINEL-GRAPH-AUTHOR"},
+        "publisher": {"@type": "Organization", "name": "Graph Catalog"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Catalog", "item": "/catalog"},
+          {"@type": "ListItem", "position": 2, "name": "Field kit", "item": "/catalog/field-kit"}
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "url": "/img/catalog-kit.jpg",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <article>
+    <h1>Graph Catalog Product Page</h1>
+    <p>SENTINEL-MICRODATA-TEXT the field kit ships with the compass, the
+    notebook, and a one-page primer on structured data. The page declares
+    its product twice: once as an @graph in JSON-LD, once as microdata.</p>
+
+    <div itemscope itemtype="https://schema.org/Product">
+      <h2 itemprop="name">SENTINEL-MICRODATA-NAME field observation kit</h2>
+      <meta itemprop="sku" content="SENTINEL-MICRODATA-SKU">
+      <meta itemprop="gtin13" content="9780000000001">
+      <meta itemprop="brand" content="SENTINEL-MICRODATA-BRAND">
+      <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="49.00">
+        <meta itemprop="priceCurrency" content="USD">
+        <meta itemprop="availability" content="https://schema.org/InStock">
+      </div>
+      <p itemprop="description">SENTINEL-MICRODATA-DESC a canvas roll, two
+      graphite pencils, and a folding ruler, packed for a week in the field.</p>
+    </div>
+
+    <p><a href="/catalog">Browse the full catalog</a></p>
+  </article>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SPA Delayed Render</title>
+</head>
+<body>
+  <!-- Empty mount: static lanes see no text; only a renderer that waits
+       for the client timer recovers the article. data-ready is the B5
+       wait target, declared after the render. -->
+  <div id="app"></div>
+  <script>
+    setTimeout(function () {
+      document.getElementById('app').innerHTML =
+        '<article><h1>Delayed render article</h1>' +
+        '<p>SENTINEL-SPA-DELAY This article body exists only after the ' +
+        'client timer fires. A text-only extractor reads an empty mount; ' +
+        'a renderer that waits for the declared ready marker recovers it ' +
+        'on the first attempt instead of spending a second render.</p>' +
+        '<p>Filler paragraph one keeps the rendered body above the ' +
+        'completeness floor: the extractor needs enough prose to trust ' +
+        'the page as real content rather than a stub.</p>' +
+        '<p>Filler paragraph two continues the article with more ' +
+        'ordinary sentences so the shell heuristic does not flag the ' +
+        'result and the completeness judge sees a complete page.</p>' +
+        '<p>Filler paragraph three rounds out the body and leaves the ' +
+        'ready marker as the only thing the fetch has to wait for.</p>' +
+        '</article>';
+      document.body.setAttribute('data-ready', '1');
+    }, 1200);
+  </script>
+</body>
+</html>

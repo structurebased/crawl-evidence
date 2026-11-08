@@ -1,0 +1,1555 @@
+{
+  "slice": "slice-100.csv",
+  "n": 100,
+  "engines": {
+    "crawl_engine": {
+      "n_scored": 100,
+      "coverage_pct": 70.0,
+      "avg_f1": 0.3882
+    },
+    "firecrawl_api": {
+      "n_scored": 100,
+      "coverage_pct": 75.0,
+      "avg_f1": 0.5161
+    },
+    "rest_scraper": {
+      "n_scored": 100,
+      "coverage_pct": 48.0,
+      "avg_f1": 0.325
+    },
+    "crawl4ai_scraper": {
+      "n_scored": 100,
+      "coverage_pct": 47.0,
+      "avg_f1": 0.3369
+    },
+    "playwright_scraper": {
+      "n_scored": 100,
+      "coverage_pct": 28.0,
+      "avg_f1": 0.1992
+    }
+  },
+  "tasks": {
+    "1": {
+      "url": "https://www.edimark.fr/revues/la-lettre-du-rhumatologue/n-414-septembre-2015/la-gestion-des-comorbidites-une-etape-indispensable-trop-longtemps-negligee",
+      "truth_len": 721,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9390243902439025,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9651162790697675,
+        "reason": null
+      }
+    },
+    "11": {
+      "url": "https://www.eaa.org.hk/zh-hk/login?returnurl=%2fzh-hk%2fInformation-Centre%2fPress-Releases",
+      "truth_len": 159,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.0625,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.06451612903225808,
+        "reason": null
+      }
+    },
+    "21": {
+      "url": "https://www.okx.com/convert/aevo-to-huf",
+      "truth_len": 1073,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.6153846153846154,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.5933014354066987,
+        "reason": null
+      }
+    },
+    "31": {
+      "url": "https://www.westernrm.com/swivels/7ch",
+      "truth_len": 598,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "41": {
+      "url": "http://careers.siriusxm.com/careers",
+      "truth_len": 557,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9365079365079365,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9448818897637795,
+        "reason": null
+      }
+    },
+    "51": {
+      "url": "https://www.peticoesonline.com.br/legislacao/lei-de-biosseguranca",
+      "truth_len": 946,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9108910891089109,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9313725490196079,
+        "reason": null
+      }
+    },
+    "61": {
+      "url": "https://carole-vercheyre-grard.fr/activite-partielle-et-jours-feries/",
+      "truth_len": 1415,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9702127659574469,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9333333333333333,
+        "reason": null
+      }
+    },
+    "71": {
+      "url": "https://10insightsclimate.science/wp-content/uploads/2024/11/10-New-Insights-in-Climate-Science-2024-Report-Final.pdf",
+      "truth_len": 531,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "81": {
+      "url": "https://www.xt.com/etfIndex/defiindex_usdt",
+      "truth_len": 438,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "91": {
+      "url": "https://www.marketwatch.com/investing/stock/nsc?mod=taxwatch",
+      "truth_len": 1895,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.19141914191419143,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.37942122186495175,
+        "reason": null
+      }
+    },
+    "101": {
+      "url": "https://help.justcall.io/en/collections/308523-sales-dialer",
+      "truth_len": 810,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.75177304964539,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.7536231884057972,
+        "reason": null
+      }
+    },
+    "111": {
+      "url": "https://v17.angular.io/docs/guide/guide/api/common/provideImageKitLoader",
+      "truth_len": 608,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.0967741935483871,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9904761904761905,
+        "reason": null
+      }
+    },
+    "121": {
+      "url": "https://acpr.banque-france.fr/fr/recherche?page=65",
+      "truth_len": 941,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.32727272727272727,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.34730538922155685,
+        "reason": null
+      }
+    },
+    "131": {
+      "url": "https://cnn.com/climate",
+      "truth_len": 2051,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.22127659574468087,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.2324561403508772,
+        "reason": null
+      }
+    },
+    "141": {
+      "url": "https://constructalia.arcelormittal.com/files/MSB02%20Concept%20Design--3193df3624346e5b7299792599e90933.pdf",
+      "truth_len": 205,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "151": {
+      "url": "https://www.puregym.com/landing-page/modern-slavery-statement/",
+      "truth_len": 824,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "161": {
+      "url": "https://softwarebude.at/blog/vorteile-linzer-unternehmen",
+      "truth_len": 1192,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.2081447963800905,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.1953488372093023,
+        "reason": null
+      }
+    },
+    "171": {
+      "url": "https://dev.mysql.com/doc/workbench/en/wb-admin-export-import-management.html",
+      "truth_len": 1117,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9637305699481866,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9947089947089947,
+        "reason": null
+      }
+    },
+    "181": {
+      "url": "https://www.crossvertise.com/radiowerbung/regensburg",
+      "truth_len": 995,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.2681564245810055,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.2681564245810055,
+        "reason": null
+      }
+    },
+    "191": {
+      "url": "https://www.ccdi.gov.cn/jdjbnew/wntj/",
+      "truth_len": 374,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.2285714285714286,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.41025641025641024,
+        "reason": null
+      }
+    },
+    "201": {
+      "url": "https://www.amazon.co.uk/MSI-MPG-Trident-11TC-2283UK-Gaming/dp/B09NRVVZ63",
+      "truth_len": 1270,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.48648648648648646,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.94,
+        "reason": null
+      }
+    },
+    "211": {
+      "url": "https://www.childrens.com/health-wellness/what-is-the-best-milk-for-children",
+      "truth_len": 1071,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.5321100917431193,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9727272727272728,
+        "reason": null
+      }
+    },
+    "221": {
+      "url": "https://www.gov.br/mdic/pt-br/assuntos/noticias/2024/junho/presidente-sanciona-lei-do-programa-mover",
+      "truth_len": 1451,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.19642857142857142,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.8695652173913043,
+        "reason": null
+      }
+    },
+    "231": {
+      "url": "https://Brightarchitecturalsolutions.co.uk",
+      "truth_len": 1142,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "401 auth required"
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9652173913043478,
+        "reason": null
+      }
+    },
+    "241": {
+      "url": "https://www.dupagecounty.gov/business_detail_T12_R112.php",
+      "truth_len": 27,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "251": {
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/supported-languages",
+      "truth_len": 677,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.380952380952381,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.3787878787878788,
+        "reason": null
+      }
+    },
+    "261": {
+      "url": "https://insights.miro.com",
+      "truth_len": 1589,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.10619469026548672,
+        "reason": "404 dead URL"
+      }
+    },
+    "271": {
+      "url": "https://bni.com.tw/zh-TW/memberdetails?encryptedMemberId=OEgr%2FEQFHyMXf1WBJJQx2w%3D%3D&name=%E7%BE%85+++%E8%8F%80%E6%A6%86Renee",
+      "truth_len": 318,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.923076923076923,
+        "reason": null
+      }
+    },
+    "281": {
+      "url": "https://www.totaltools.com.au/158100-makita-18vx2-brushless-upright-vacuum-skin-dvc560z",
+      "truth_len": 1130,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.5893719806763285,
+        "reason": null
+      }
+    },
+    "291": {
+      "url": "https://unitedcallcenters.hu/press-room/kenyai-magyar-virtualis-uzleti-forum-a-united-call-centers-reszvetelevel",
+      "truth_len": 950,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9736842105263158,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.041666666666666664,
+        "reason": null
+      }
+    },
+    "301": {
+      "url": "https://www.worthingtonagparts.com/catalog-request",
+      "truth_len": 143,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "311": {
+      "url": "https://www.amazon.jobs/en/jobs/2723129/data-scientist-transportation-network-planning",
+      "truth_len": 412,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.7476635514018691,
+        "reason": "404 dead URL"
+      }
+    },
+    "321": {
+      "url": "https://abcauto.com/en/search?&fit=N&ac_q=ArmorAll&sort=score&mpp=24&hawkFacetField_item_quantity_size_description=30%20CT",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "other"
+      }
+    },
+    "331": {
+      "url": "http://cartercpa.net",
+      "truth_len": 792,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.948051948051948,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "341": {
+      "url": "https://datrics.ai",
+      "truth_len": 1418,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.06511627906976744,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.2540983606557377,
+        "reason": null
+      }
+    },
+    "351": {
+      "url": "http://blueheroncap.com?sixvxskxyc=ocrboxzvjh4wjs8ugcgj",
+      "truth_len": 698,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9864864864864865,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9864864864864865,
+        "reason": null
+      }
+    },
+    "361": {
+      "url": "https://derriennic.com/evenements/action~month/exact_date~1751320800/tag_ids~5621,5632,5845,5893,5622,5745,6152/request_format~json/",
+      "truth_len": 1971,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.009950248756218905,
+        "reason": "403 (their proxy also blocked)"
+      }
+    },
+    "371": {
+      "url": "https://www.bsdvt.org/category/coronavirus",
+      "truth_len": 862,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.4736842105263158,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.6145251396648046,
+        "reason": null
+      }
+    },
+    "381": {
+      "url": "https://docs.credal.ai/api-reference/search/search-document-collection",
+      "truth_len": 968,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.2047244094488189,
+        "reason": "404 dead URL"
+      }
+    },
+    "391": {
+      "url": "https://bioreactortech.com/products/two-stage-multi-stage-fermenter-10l-100l",
+      "truth_len": 2565,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "fetch error / no HTTP status"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "Firecrawl server/internal error"
+      }
+    },
+    "401": {
+      "url": "https://www.simplain.com/blog",
+      "truth_len": 1407,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.43478260869565216,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.1507537688442211,
+        "reason": null
+      }
+    },
+    "411": {
+      "url": "https://techcrunch.com/2025/04/14/hugging-face-buys-a-humanoid-robotics-startup/",
+      "truth_len": 968,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.7109004739336493,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.6666666666666666,
+        "reason": null
+      }
+    },
+    "421": {
+      "url": "http://lascuoladitalia.org",
+      "truth_len": 954,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.8095238095238095,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9569377990430622,
+        "reason": null
+      }
+    },
+    "431": {
+      "url": "https://www.americanbankingnews.com/2025/04/09/capital-management-corp-va-raises-stake-in-amazon-com-inc-nasdaqamzn.html",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "441": {
+      "url": "https://www.parks.swiss/fr/les-parcs-suisses/vue-densemble/parc-jura-vaudois",
+      "truth_len": 971,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9622641509433962,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "451": {
+      "url": "https://arxiv.org/html/2410.01639v4",
+      "truth_len": 1294,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.5959183673469387,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.976190476190476,
+        "reason": null
+      }
+    },
+    "461": {
+      "url": "https://www.schmachtl.at/de/geschaeftsbereiche/energietechnik/transformatoren/",
+      "truth_len": 1091,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.6030150753768845,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.6565656565656566,
+        "reason": null
+      }
+    },
+    "471": {
+      "url": "https://wles.pfisd.net/about-us/wieland-elementary-school-calendar",
+      "truth_len": 151,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.29629629629629634,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.0,
+        "reason": null
+      }
+    },
+    "481": {
+      "url": "https://www.flypgs.com/sikca-sorulan-sorular/belcika",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "491": {
+      "url": "https://www.amafi.fr/nos-adherents/?letters=K,E,X,H,T",
+      "truth_len": 786,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "site unsupported by Firecrawl"
+      }
+    },
+    "501": {
+      "url": "https://community.make.com/t/extract-calendly-event/4498",
+      "truth_len": 2,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.0,
+        "reason": null
+      }
+    },
+    "511": {
+      "url": "https://social27.com/ai-solutions",
+      "truth_len": 1077,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.1272727272727273,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "521": {
+      "url": "https://ecogreenindustries.com/product-category/filter-media/carbon-chemistry/",
+      "truth_len": 1193,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "fetch error / no HTTP status"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "Firecrawl server/internal error"
+      }
+    },
+    "531": {
+      "url": "https://blog.google/products/google-cloud/ai-trends-business-2025/",
+      "truth_len": 3869,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9541595925297113,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9600000000000001,
+        "reason": null
+      }
+    },
+    "541": {
+      "url": "https://www.museland.ai/episode/alex-628228333309062",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "frozen auto-fail (empty truth+lie annotations)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "DNS failure"
+      }
+    },
+    "551": {
+      "url": "https://help.welcometothejungle.com/hc/en-gb/articles/4404011315602-GDPR-update-2022-Informing-applicants-about-their-resume-retention-in-Welcome-to-the-Jungle-Solutions-ATS",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "561": {
+      "url": "http://macys.com/shop/junior-clothing/shop-all-juniors-apparel/Sleeve_length,Top_style/Sleeveless,Active?id=60983",
+      "truth_len": 5542,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.11353711790393013,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.3598130841121495,
+        "reason": null
+      }
+    },
+    "571": {
+      "url": "https://www.engineeringforchange.org/news/vertical-farming-a-practical-approach-to-modernizing-farms-in-africa/",
+      "truth_len": 7395,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.20494699646643108,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.16964285714285712,
+        "reason": null
+      }
+    },
+    "581": {
+      "url": "https://www.hardeeso.com/join_our_team/deputy_sheriff.php",
+      "truth_len": 1315,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9294605809128631,
+        "reason": null
+      }
+    },
+    "591": {
+      "url": "https://www.laportehardware.com/shop/cleaning-supplies/cleaning-tools-and-supplies/window-washers-and-brushes/window-cleaning-kit/128445-unger-window-washing-starter-kit",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "frozen auto-fail (empty truth+lie annotations)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "Firecrawl server/internal error"
+      }
+    },
+    "601": {
+      "url": "https://www.comc.com/Cards/Baseball/2024/Topps_Series_2_-_Base_-_Holiday/462/Ryan_McMahon/26039057",
+      "truth_len": 1003,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.5079365079365079,
+        "reason": null
+      }
+    },
+    "611": {
+      "url": "https://www.ciee.yamanashi.ac.jp/en/education/40/",
+      "truth_len": 455,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "fetch error / no HTTP status"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "Firecrawl server/internal error"
+      }
+    },
+    "621": {
+      "url": "https://www.space.com/spacex-starship-upper-stage-chopstick-catch-elon-musk",
+      "truth_len": 4271,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.6666666666666666,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.25,
+        "reason": null
+      }
+    },
+    "631": {
+      "url": "https://www.researchgate.net/publication/334589302_The_Role_of_Corporate_Governance_in_Financial_Communication",
+      "truth_len": 3404,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "429 rate limited"
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.8148148148148148,
+        "reason": null
+      }
+    },
+    "641": {
+      "url": "https://weare.lush.com/sv-se/press-releases/halloween-jul-2021",
+      "truth_len": 1646,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.937984496124031,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "651": {
+      "url": "https://arlingtonbakery.square.site/product/biscotello-chocolate/32",
+      "truth_len": 421,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.11904761904761904,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.6818181818181819,
+        "reason": null
+      }
+    },
+    "661": {
+      "url": "https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/bioengineering/about/staff-directory",
+      "truth_len": 627,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.737864077669903,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.8210526315789474,
+        "reason": null
+      }
+    },
+    "671": {
+      "url": "https://sonofresco.com/product-category/green-beans/indonesia/papua-new-guinea/",
+      "truth_len": 1032,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.2857142857142857,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.32258064516129026,
+        "reason": null
+      }
+    },
+    "681": {
+      "url": "http://view.com/blog",
+      "truth_len": 1802,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.868131868131868,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.8523676880222841,
+        "reason": null
+      }
+    },
+    "691": {
+      "url": "https://www.sec.gov/Archives/edgar/data/846546/000107997314000441/bonso_20f.htm",
+      "truth_len": 825,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.7770700636942675,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9811320754716981,
+        "reason": null
+      }
+    },
+    "701": {
+      "url": "http://aaronkirman.com/listings/11870-ellice-st-malibu-ca-90265",
+      "truth_len": 924,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.7232142857142857,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.8461538461538461,
+        "reason": null
+      }
+    },
+    "711": {
+      "url": "https://open.endole.co.uk/insight/company/07342367-one-environmental-ltd",
+      "truth_len": 4565,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "Firecrawl server/internal error"
+      }
+    },
+    "721": {
+      "url": "https://www.argusdelassurance.com/actualite/actualite.125038",
+      "truth_len": 4982,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.04558404558404558,
+        "reason": "404 dead URL"
+      }
+    },
+    "731": {
+      "url": "http://newbusinessdirections.com",
+      "truth_len": 2843,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.8018648018648018,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9846827133479211,
+        "reason": null
+      }
+    },
+    "741": {
+      "url": "https://www.glutenvrijemarkt.com/tags/reiniger/",
+      "truth_len": 89,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.5925925925925927,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.6666666666666666,
+        "reason": null
+      }
+    },
+    "751": {
+      "url": "https://allestoringen.nl/storing/caiway/",
+      "truth_len": 1994,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.08764940239043825,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.16272965879265092,
+        "reason": null
+      }
+    },
+    "761": {
+      "url": "https://havaslynx.com/news/havas-lynx-awarded-uks-best-workplaces-recognition-for-second-consecutive-year/",
+      "truth_len": 4213,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 (their proxy also blocked)"
+      }
+    },
+    "771": {
+      "url": "https://mrguppyfish.com/product-tag/recommendation/?filter_tax_product_cat=143%2C164%2C166",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "781": {
+      "url": "https://www.feteknik.dk/om-fyns-energiteknik/historie",
+      "truth_len": 1008,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.8333333333333333,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.7608695652173914,
+        "reason": null
+      }
+    },
+    "791": {
+      "url": "https://docs.sprinthub.com/topicos/converter/chatbot/chatbot-duvidas-comuns/chatbot-logica-de-saida-do-bloco-de-condicao-quando-o-nao-e-a-saida-positiva",
+      "truth_len": 1640,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9716981132075471,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.7272727272727273,
+        "reason": null
+      }
+    },
+    "801": {
+      "url": "https://www.daifuku.com/company/summary/",
+      "truth_len": 1336,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.7722007722007723,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.8571428571428572,
+        "reason": null
+      }
+    },
+    "811": {
+      "url": "https://www.semanticscholar.org/search?q=Vertriebsleistung+Customer+Journey+Analyse+Kundenerlebnis-Management&sort=relevance",
+      "truth_len": 116,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.16,
+        "reason": null
+      }
+    },
+    "821": {
+      "url": "https://www.hurento.ma/voiture-hybride-maroc",
+      "truth_len": 9750,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.844106463878327,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 1.0,
+        "reason": null
+      }
+    },
+    "831": {
+      "url": "https://llbean.com/buy/mens-brown-shoes",
+      "truth_len": 4305,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.2571428571428571,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.4918793503480278,
+        "reason": null
+      }
+    },
+    "841": {
+      "url": "https://www.cabinetnow.com/base-cabinets/?page=2&srsltid=AfmBOop6x-YmInHQRb5KPQ98jCu0t2n8iGBfxvuqji_RKV6Nm2idJZrB",
+      "truth_len": 1832,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.41545893719806765,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.35807860262008734,
+        "reason": null
+      }
+    },
+    "851": {
+      "url": "https://vercel.com/docs/ai-sdk",
+      "truth_len": 3208,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.5059101654846336,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.5496183206106872,
+        "reason": null
+      }
+    },
+    "861": {
+      "url": "http://xn--ruqp9oinnkha258i.com/",
+      "truth_len": 56,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.0,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.5,
+        "reason": null
+      }
+    },
+    "871": {
+      "url": "https://www.icf.church/zuerich/de/pinboard/pinboard-category/mitfahrgelegenheit/",
+      "truth_len": 262,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.24615384615384617,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.253968253968254,
+        "reason": null
+      }
+    },
+    "881": {
+      "url": "https://docs.chain.link/chainlink-functions/tutorials/api-query-parameters",
+      "truth_len": 2264,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.7710144927536231,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.7598784194528876,
+        "reason": null
+      }
+    },
+    "891": {
+      "url": "https://www.wellnesspursuits.com/im-not-that-old-why-do-my-knees-hurt-so-much-2/",
+      "truth_len": 2973,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.9771863117870723,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9700374531835206,
+        "reason": null
+      }
+    },
+    "901": {
+      "url": "https://bonavitabrand.co/products/hawaiian-coconut-coffee?pr_prod_strat=e5_desc&pr_rec_id=11516fdd4&pr_rec_pid=9825279050013&pr_ref_pid=9825279475997&pr_seq=uniform",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "911": {
+      "url": "https://git-scm.com/book/ms/v2/Git-Tools-Advanced-Merging",
+      "truth_len": 3305,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.7959183673469388,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.7736943907156673,
+        "reason": null
+      }
+    },
+    "921": {
+      "url": "https://journals.uclpress.co.uk/lre/article/pubid/LRE-20-48/",
+      "truth_len": 5158,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.8696925329428989,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.972972972972973,
+        "reason": null
+      }
+    },
+    "931": {
+      "url": "https://travelcards.cardratings.com/",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "403 / bot challenge (infra)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "other"
+      }
+    },
+    "941": {
+      "url": "https://www.ambridgeboro.org/ambridge-borough-government/mayor-and-council/council-minutes/",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "951": {
+      "url": "https://www.navit.com/en/car-subscription",
+      "truth_len": 1242,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.3275862068965517,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.7983193277310924,
+        "reason": null
+      }
+    },
+    "961": {
+      "url": "https://auth.bigid.com/ai-security-governance",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "404 dead URL"
+      }
+    },
+    "971": {
+      "url": "https://www.oilprice.com/",
+      "truth_len": 4797,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.21474358974358976,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.32304038004750596,
+        "reason": null
+      }
+    },
+    "981": {
+      "url": "https://goshowhero.com/pages/affordable-event-signage-showhero-custom-displays",
+      "truth_len": 0,
+      "annotations_empty": true,
+      "crawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "frozen auto-fail (empty truth+lie annotations)"
+      },
+      "firecrawl": {
+        "covered": false,
+        "f1": 0.0,
+        "reason": "other"
+      }
+    },
+    "991": {
+      "url": "https://help.fanruan.com/finereport10.0/doc-view-281.html",
+      "truth_len": 813,
+      "annotations_empty": false,
+      "crawl": {
+        "covered": true,
+        "f1": 0.8757396449704141,
+        "reason": null
+      },
+      "firecrawl": {
+        "covered": true,
+        "f1": 0.9767441860465116,
+        "reason": null
+      }
+    }
+  },
+  "crawl_failure_reasons": {
+    "403 / bot challenge (infra)": 12,
+    "404 dead URL": 10,
+    "fetch error / no HTTP status": 3,
+    "frozen auto-fail (empty truth+lie annotations)": 3,
+    "401 auth required": 1,
+    "429 rate limited": 1
+  },
+  "firecrawl_failure_reasons": {
+    "404 dead URL": 13,
+    "Firecrawl server/internal error": 5,
+    "other": 3,
+    "403 (their proxy also blocked)": 2,
+    "site unsupported by Firecrawl": 1,
+    "DNS failure": 1
+  },
+  "head_to_head": {
+    "both_cover": 69,
+    "crawl_only": 1,
+    "firecrawl_only": 6,
+    "neither": 24
+  }
+}

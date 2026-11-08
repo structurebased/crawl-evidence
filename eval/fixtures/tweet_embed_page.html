@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sentinel Build Notes</title>
+  <meta name="description" content="A static page that embeds a tweet-shaped blockquote.">
+</head>
+<body>
+  <article>
+    <h1>Sentinel Build Notes</h1>
+    <p>SENTINEL-TWEET-PAGE the release thread below is captured as the
+    blockquote Twitter's publish widget leaves behind when JavaScript never
+    runs. The HTML path is all this fixture can test; the syndication and
+    oEmbed lanes need live HTTP against twitter.com and are a separate row.</p>
+
+    <blockquote class="twitter-tweet" data-theme="light">
+      <p lang="en" dir="ltr">SENTINEL-TWEET-TEXT the coverage ceiling was a
+      measurement bug, not a capability bug. Fixing the ruler today.</p>
+      — Mara Voss (@maravoss)
+      <a href="https://twitter.com/maravoss/status/1987654321000000001">SENTINEL-TWEET-DATE</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"></script>
+
+    <p>The reply thread continues in the <a href="/threads/coverage">full
+    thread</a>.</p>
+  </article>
+</body>
+</html>

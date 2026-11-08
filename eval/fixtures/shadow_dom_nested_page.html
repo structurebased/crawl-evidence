@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SENTINEL-NEST-TITLE Borealis Kit component gallery | Borealis Design System</title>
+<meta name="description" content="SENTINEL-NEST-META The Borealis Kit gallery: nested shadow-root tabs, slotted panels and focus management, with usage notes for product teams.">
+<meta property="article:published_time" content="2026-07-22T08:00:00Z">
+<meta property="article:modified_time" content="2026-10-28T11:45:00Z">
+<meta name="author" content="Borealis design systems group">
+<meta name="keywords" content="web components, shadow DOM, tabs, design system">
+<meta property="og:title" content="SENTINEL-NEST-TITLE Borealis Kit component gallery | Borealis Design System">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://cdn.borealis.example/img/kit-gallery-1200.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://kit.borealis.example/gallery">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TechArticle","headline":"SENTINEL-NEST-TITLE Borealis Kit component gallery","keywords":["SENTINEL-NEST-JSONLD","shadow DOM","nested roots","slotted content"],"datePublished":"2026-07-22","dateModified":"2026-10-28"}
+</script>
+<style>
+body{margin:0;font:15px/1.6 system-ui,sans-serif;color:#191c21;background:#fff}
+main{max-width:780px;margin:0 auto;padding:20px}
+h1{font-size:27px;margin:6px 0 10px}
+h2{font-size:19px;margin:26px 0 8px}
+img{max-width:100%;height:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin:14px 0}
+th,td{border:1px solid #d9dde3;padding:6px 9px;text-align:left}
+th{background:#f3f5f8}
+iframe{width:100%;height:190px;border:1px solid #d9dde3}
+</style>
+</head>
+<body>
+<main>
+<h1>Borealis Kit gallery</h1>
+<p>SENTINEL-NEST-TEXT the gallery ships one web component per card. Each card
+opens its own shadow root, and the tab strip inside it opens a second root, so
+developers can read the markup once and copy it into a page. The pattern
+follows the <a href="https://web.dev/articles/shadowdom-v1?ref=SENTINEL-NEST-CITATION">web.dev shadow DOM guide</a>.</p>
+<p><a href="/gallery/tabs" title="SENTINEL-NEST-LINKS-META tabs component reference">Tabs reference</a>
+<a href="/releases?tag=SENTINEL-NEST-LINK">Release notes</a></p>
+<figure><img src="/img/kit-card-480.png"
+  srcset="/img/kit-card-480.png 480w, /img/kit-card-960.webp 960w, /img/SENTINEL-NEST-IMG.webp 1920w"
+  alt="SENTINEL-NEST-ALT gallery card showing the tab strip above a panel" width="780" height="330">
+<figcaption>One card, two shadow roots, three slotted panels.</figcaption></figure>
+<table>
+<caption>Root ownership per gallery card</caption>
+<tr><th>Layer</th><th>Owner</th><th>Visible to page CSS</th></tr>
+<tr><td>Outer root</td><td>borealis-card</td><td>no</td></tr>
+<tr><td>Inner root</td><td>SENTINEL-NEST-TABLE borealis-tabs</td><td>no</td></tr>
+<tr><td>Slotted body</td><td>host page</td><td>yes</td></tr>
+</table>
+<iframe src="https://stack.borealis.example/embed?component=SENTINEL-NEST-IFRAME" title="Live component stack"></iframe>
+<h2>References</h2>
+<ol class="references">
+<li><a href="https://web.dev/articles/shadowdom-v1?ref=SENTINEL-NEST-CITATION" title="web.dev shadow DOM guide">Shadow DOM v1: self-contained web components</a></li>
+</ol>
+<pre><code class="language-html"><borealis-card>
+  <span slot="title">Sentinel card SENTINEL-NEST-MARKDOWN</span>
+</borealis-card></code></pre>
+<div data-ref="SENTINEL-NEST-RAWHTML"></div>
+
+<borealis-card>
+  <template shadowrootmode="open">
+    <style>.card{border:1px solid #cfd4db;border-radius:10px;padding:14px}</style>
+    <section class="card">
+      <h2>SENTINEL-NEST-SHADOW-HEADING nested tab card</h2>
+      <p>SENTINEL-NEST-SHADOW-TEXT the outer root owns the frame and hands the
+      title slot to the inner tabs component.</p>
+      <borealis-tabs>
+        <template shadowrootmode="open">
+          <div class="tabs">
+            <h3>SENTINEL-NEST-INNER-HEADING keyboard behaviour</h3>
+            <p>SENTINEL-NEST-INNER-TEXT arrow keys move between tabs and the
+            active panel receives focus after activation.</p>
+            <slot></slot>
+          </div>
+        </template>
+        <p slot="panel">SENTINEL-NEST-SLOT slotted panel content written by the
+        host page, rendered inside the inner root.</p>
+      </borealis-tabs>
+    </section>
+  </template>
+  <p>SENTINEL-NEST-LIGHT light-DOM paragraph beside the card in the document.</p>
+</borealis-card>
+
+<borealis-runtime-note></borealis-runtime-note>
+<script>
+// Runtime-only note: the needle is assembled so a text extractor reading the
+// script bytes can never satisfy the sentinel by quoting source. The
+// innerHTML literal is fixture-constant markup, never user input.
+var tag = ['SENTINEL', 'NEST', 'SHADOW'].join('-') + '-NOTE';
+var host = document.querySelector('borealis-runtime-note');
+var root = host.attachShadow({mode: 'open'});
+root.innerHTML = '<p>' + tag + ' added by the component after hydration.</p>';
+</script>
+</main>
+</body>
+</html>

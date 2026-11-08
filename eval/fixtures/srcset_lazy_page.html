@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Field Gallery</title>
+  <meta name="description" content="A gallery that ships responsive and lazy-loaded images.">
+  <meta property="og:image" content="/img/og-cover.jpg">
+</head>
+<body>
+  <article>
+    <h1>Responsive Field Gallery</h1>
+    <p>SENTINEL-SRCSET-LAZY field notes from a two-week ridge walk, with every
+    frame published at several widths so readers on slow links still get a
+    picture.</p>
+    <img src="/img/hero-640.jpg"
+         srcset="/img/hero-640.jpg 640w, /img/hero-1600.webp 1600w"
+         sizes="100vw" width="1600" height="900"
+         alt="SENTINEL-HERO-ALT alpine ridge at first light">
+    <p>The lead frame is srcset-only above 640 px. The next two load lazily:
+    one through data attributes, one through the picture element.</p>
+    <img data-src="/img/lazy-photo-1200.jpg"
+         data-srcset="/img/lazy-photo-400.jpg 400w, /img/lazy-photo-1200.jpg 1200w"
+         width="1200" height="800" loading="lazy"
+         alt="SENTINEL-LAZY-ALT harbor at dusk">
+    <picture>
+      <source type="image/avif"
+              srcset="/img/picture-800.avif 800w, /img/picture-1600.avif 1600w">
+      <source type="image/webp" srcset="/img/picture-800.webp 800w">
+      <img src="/img/picture-800.jpg" width="1600" height="1067"
+           alt="SENTINEL-PICTURE-ALT river bend from the footbridge">
+    </picture>
+    <video src="/media/ridge-pan.mp4" poster="/img/poster-frame.jpg"
+           width="640" height="360" controls></video>
+    <p><a href="/gallery">Back to the gallery index</a></p>
+  </article>
+</body>
+</html>

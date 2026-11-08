@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shadow Component Demo</title>
+  <meta name="description" content="A page whose main content lives in an open shadow root with a named slot.">
+</head>
+<body>
+  <article>
+    <h1>Shadow Component Demo</h1>
+    <p>SENTINEL-SHADOW-PAGE the card below is a web component. Its heading,
+    body copy, and style live in a declarative open shadow root; only the
+    footer paragraph is light-DOM content assigned to a named slot.</p>
+
+    <my-status-card>
+      <template shadowrootmode="open">
+        <style>
+          .card { border: 1px solid #ccc; padding: 1rem; }
+          .title { font-weight: 700; }
+        </style>
+        <section class="card">
+          <h2 class="title">SENTINEL-SHADOW-HEADING build health</h2>
+          <p>SENTINEL-SHADOW-TEXT all twenty-two lanes reported a clean run
+          last night, including the two that render in a browser.</p>
+          <slot name="footer"></slot>
+        </section>
+      </template>
+      <p slot="footer">SENTINEL-SLOT-FOOTER assigned from light DOM by the
+      host page, not by the component.</p>
+      <p>SENTINEL-SHADOW-LIGHT ordinary paragraph that sits beside the
+      component in the light DOM.</p>
+    </my-status-card>
+
+    <my-runtime-card id="runtime-card"></my-runtime-card>
+
+    <p><a href="/components">All component demos</a></p>
+  </article>
+  <script>
+    // A root created at runtime is absent from the fetched bytes, so only a
+    // renderer that pierces open roots can put this sentinel in `text`.
+    // The innerHTML literal is fixture-constant markup, never user input.
+    var host = document.getElementById('runtime-card');
+    var root = host.attachShadow({mode: 'open'});
+    root.innerHTML = '<section class="card">' +
+      '<h2 class="title">SENTINEL-JS-SHADOW-HEADING runtime card</h2>' +
+      '<p>SENTINEL-JS-SHADOW-TEXT assembled by attachShadow after load.</p>' +
+      '</section>';
+  </script>
+</body>
+</html>
